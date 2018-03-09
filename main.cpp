@@ -1,5 +1,7 @@
 #include <iostream>
 #include "milionario.hpp"
+#include "vetor.hpp"
+#include "calcceds.hpp"
 using std::cout;
 using std::cin;
 using std::endl;
@@ -17,9 +19,9 @@ int main(){
     if(servico == 1){
         calcTempMilionario();
     } else if(servico == 2){
-            //chamar funcao B
+        vetor();
     } else if(servico == 3){
-                //chamar funcao C
+        calcCeds();
     } else {
         cout << "Foi digitado uma icognita nao reconhecivel pelo programa. Tente novamente!" << endl;
     }
