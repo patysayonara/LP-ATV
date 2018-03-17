@@ -4,6 +4,15 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+/**
+*@file calcceds.cpp
+*@brief Arquivo com a função que possibilita o cálculo de quantas cédulas específicas são necessárias para compor um certo valor.
+*@author  Patrícia Sayonara
+*@since 07/03/2018
+*@date 08/03/2018
+*@version 2.0
+*/
+
 void calcCeds(){
 	int v[7], i, valor;
 	cout << "Digite o valor a ser analisado: ";
@@ -14,6 +23,9 @@ void calcCeds(){
 		v[i] = 0;
 	}
 
+    /**
+    *@brief O uso do artifício "while" possibilita calcular a quantia máxima de cédulas de cada valor possível, levando em conta o número inserido na função, e decresce do número total conforme é operado.
+    */
 	while(valor >= 100){
 		v[0]++;
 		valor -= 100;

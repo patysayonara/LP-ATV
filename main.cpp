@@ -6,6 +6,15 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+/**
+*@file main.cpp
+*@brief Arquivo main do programa que gerencia a chamada das funcoes.
+*@author Andre Ricardo, Laura Beatriz, Patricia Sayonara
+*@since 07/03/2018
+*@date 08/03/2018
+*@version 2.0
+*/
+
 int main(){
     int servico;
 
@@ -16,6 +25,9 @@ int main(){
     cout << "Qual o programa desejado?" << endl;
     cin >> servico;
 
+    /**
+    *@brief Chamada das funcoes que fazem parte do programa.
+    */
     if(servico == 1){
         calcTempMilionario();
     } else if(servico == 2){
