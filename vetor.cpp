@@ -4,13 +4,32 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+/**
+*@file vetor.cpp
+*@brief Arquivo com a função que implementa um vetor de 10 posições e indica a quantidade de vezes que determinado elemento aparece
+*@author  André Ricardo
+*@since 08/03/2018
+*@date 08/03/2018
+*@version 2.0
+*/
+
 void vetor(){
-    int x, y, contador, novo, valor;
-    int vetor_1[10][2] ={{0}, {0}};
+    int x, y; /**< Utilizadas como auxiliares para o for */
+    int contador; /**< Responsável por armazenar a quantidade de valores diferentes são armazenadas no vetor*/
+    int novo; /**< Serve como um indicador da aparição de um novo elemento no vetor */
+    int valor; /**< Variável auxiliar que armazena temporariamente o valor digitado*/
+    int vetor_1[10][2] ={{0}, {0}}; /**< Vetor de duas dimensões onde serão armazenados os elementos e a quantidade de vezes q aquele elemento foi colocado*/
 
     contador = 0;
 
     cout << "Digite 10 numeros" << endl;
+
+    /**
+    @details O programa consciste em um loop onde serão recebidos os valores separadamente, cada valor será comparado aos postos
+    anteriormente. Caso já tenha sido utilizado, será somado 1 ao valor da segunda coluna do vetor. Caso seja a primeira vez, será
+    armazenado esse valor e será somado um ao seu segundo vetor, além de se acrescentar um a variável "contador" responsável por
+    indicar o número de elementos diferentes foram colocados
+    */
 
     for (x = 0; x < 10; x++){
         cin >> valor;
@@ -30,6 +49,9 @@ void vetor(){
         }
     }
 
+    /**
+    @brief Impressão dos valores digitados e a quantidade de vezes que cada um aparece. Utilização do elemento contador como indicador da quantidade de elementos distintos que foram postos
+    */
 
     for (x = 0; x <= contador; x++){
         if (vetor_1[x][1] >= 1){
