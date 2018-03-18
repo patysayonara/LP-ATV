@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ALP: File Members</title>
+<title>ALP: calcceds.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,27 +60,47 @@ $(function() {
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">calcceds.hpp File Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all file members with links to the files they belong to:</div><ul>
-<li>calcCeds()
-: <a class="el" href="calcceds_8cpp.html#ae26acbeec3c2006a0da11c9806509ace">calcceds.cpp</a>
-, <a class="el" href="calcceds_8hpp.html#ae26acbeec3c2006a0da11c9806509ace">calcceds.hpp</a>
-</li>
-<li>calcTempMilionario()
-: <a class="el" href="milionario_8cpp.html#aa3ff9b96397dcd90e413d58794f55f77">milionario.cpp</a>
-, <a class="el" href="milionario_8hpp.html#aa3ff9b96397dcd90e413d58794f55f77">milionario.hpp</a>
-</li>
-<li>main()
-: <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main.cpp</a>
-</li>
-<li>MILHAO
-: <a class="el" href="milionario_8hpp.html#acae5ad250d2724d7d8c3dde0d9d5d4a2">milionario.hpp</a>
-</li>
-<li>vetor()
-: <a class="el" href="vetor_8cpp.html#ad8b7bca26cd76106880a61a8b39692e9">vetor.cpp</a>
-, <a class="el" href="vetor_8hpp.html#ad8b7bca26cd76106880a61a8b39692e9">vetor.hpp</a>
-</li>
-</ul>
+
+<p><a href="calcceds_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae26acbeec3c2006a0da11c9806509ace"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calcceds_8hpp.html#ae26acbeec3c2006a0da11c9806509ace">calcCeds</a> ()</td></tr>
+<tr class="separator:ae26acbeec3c2006a0da11c9806509ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ae26acbeec3c2006a0da11c9806509ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26acbeec3c2006a0da11c9806509ace">&#9670;&nbsp;</a></span>calcCeds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcCeds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vetor para receber a quantidade correta de cada possível cédula</p>
+<p>Contador para o estrutura do "for", ou seja, é responsável por determinar qual é a posição sendo acessada no vetor</p>
+<p>Armazena o valor introduzido na função e, ao longo do processo, seu valor vai decrescendo conforme as cédulas são determinadas</p>
+<p><br />
+<br />
+O uso do artifício "while" possibilita calcular a quantia máxima de cédulas de cada valor possível, levando em conta o número inserido na função, e decresce do número total conforme é operado.</p>
+<p>Impressão dos valores </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,9 +1,3 @@
-#include <iostream>
-#include "calcceds.hpp"
-using std::cin;
-using std::cout;
-using std::endl;
-
 /**
 *@file calcceds.cpp
 *@brief Arquivo com a função que possibilita o cálculo de quantas cédulas específicas são necessárias para compor um certo valor.
@@ -13,8 +7,20 @@ using std::endl;
 *@version 2.0
 */
 
+#include <iostream>
+#include "calcceds.hpp"
+using std::cin;
+using std::cout;
+using std::endl;
+
 void calcCeds(){
-	int v[7], i, valor;
+    /**@brief Vetor para receber a quantidade correta de cada possível cédula*/
+	int v[7];
+	/**@brief Contador para o estrutura do "for", ou seja, é responsável por determinar qual é a posição sendo acessada no vetor*/
+	int i;
+	/**@brief Armazena o valor introduzido na função e, ao longo do processo, seu valor vai decrescendo conforme as cédulas são determinadas*/
+	int valor;
+
 	cout << "Digite o valor a ser analisado: ";
 	cin >> valor;
 	cout << "Os valores serao impressos em ordem de cédulas 100, 50, 20, 10, 5, 2 e 1" << endl;
@@ -61,6 +67,7 @@ void calcCeds(){
 		valor -= 1;
 	}
 
+    /**@brief Impressão dos valores*/
     for(i = 0; i < 7; i++) {
         cout << v[i] << " cedula(s)." << endl;
     }

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ALP: main.cpp File Reference</title>
+<title>ALP: vetor.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,45 +65,60 @@ $(function() {
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">main.cpp File Reference</div>  </div>
+<div class="title">vetor.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Arquivo main do programa que gerencia a chamada das funcoes.  
+<p>Arquivo .hpp para o documento <a class="el" href="vetor_8cpp.html" title="Arquivo com a funcao que implementa um vetor de 10 posicoes e indica a quantidade de vezes que determ...">vetor.cpp</a>.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;<a class="el" href="milionario_8hpp_source.html">milionario.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="vetor_8hpp_source.html">vetor.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="calcceds_8hpp_source.html">calcceds.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
+
+<p><a href="vetor_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b7bca26cd76106880a61a8b39692e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vetor_8hpp.html#ad8b7bca26cd76106880a61a8b39692e9">vetor</a> ()</td></tr>
+<tr class="separator:ad8b7bca26cd76106880a61a8b39692e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Arquivo main do programa que gerencia a chamada das funcoes. </p>
-<dl class="section author"><dt>Author</dt><dd>Andre Ricardo, Laura Beatriz, Patricia Sayonara </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>07/03/2018 </dd></dl>
+<div class="textblock"><p>Arquivo .hpp para o documento <a class="el" href="vetor_8cpp.html" title="Arquivo com a funcao que implementa um vetor de 10 posicoes e indica a quantidade de vezes que determ...">vetor.cpp</a>. </p>
+<dl class="section author"><dt>Author</dt><dd>Andre Ricardo </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>08/03/2018 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>08/03/2018 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>2.0 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+<a id="ad8b7bca26cd76106880a61a8b39692e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b7bca26cd76106880a61a8b39692e9">&#9670;&nbsp;</a></span>vetor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int main </td>
+          <td class="memname">void vetor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>&lt; Utilizadas como auxiliares para o for <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+ &lt; Responsavel por armazenar a quantidade de valores diferentes sao armazenadas no vetor</p>
+<p>&lt; Serve como um indicador da aparicao de um novo elemento no vetor <br />
+<br />
+<br />
+<br />
+ &lt; Variavel auxiliar que armazena temporariamente o valor digitado</p>
+<p>&lt; Vetor de duas dimensoes onde serao armazenados os elementos e a quantidade de vezes q aquele elemento foi colocado</p>
 <p><br />
-Chamada das funcoes que fazem parte do programa.</p>
+<br />
+</p>
+<p>O programa consiste em um loop onde serao recebidos os valores separadamente, cada valor sera comparado aos postos anteriormente. Caso ja tenha sido utilizado, sera somado 1 ao valor da segunda coluna do vetor. Caso seja a primeira vez, sera armazenado esse valor e sera somado um ao seu segundo vetor, alem de se acrescentar um a variavel "contador" responsavel por indicar o numero de elementos diferentes foram colocados</p>
+<p><br />
+Impressao dos valores digitados e a quantidade de vezes que cada um aparece. Utilizacao do elemento contador como indicador da quantidade de elementos distintos que foram postos</p>
 
 </div>
 </div>

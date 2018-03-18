@@ -1,11 +1,3 @@
-#include <iostream>
-#include "milionario.hpp"
-#include "vetor.hpp"
-#include "calcceds.hpp"
-using std::cout;
-using std::cin;
-using std::endl;
-
 /**
 *@file main.cpp
 *@brief Arquivo main do programa que gerencia a chamada das funcoes.
@@ -14,6 +6,14 @@ using std::endl;
 *@date 08/03/2018
 *@version 2.0
 */
+
+#include <iostream>
+#include "milionario.hpp"
+#include "vetor.hpp"
+#include "calcceds.hpp"
+using std::cout;
+using std::cin;
+using std::endl;
 
 int main(){
     int servico;
